@@ -38,9 +38,9 @@ It serves as a reference for my learning journey and includes resources, notes, 
 - [ ] How to avoid phishing attacks
 
 ## Progress Tracking
-- Completed "Course Introduction" on September 5, 2023.
-- Completed "Social Engineering Define" on September 12, 2023.
-- Completed "Create a Malicious File with MSFvenom" on 
+- Completed "Course Introduction" on 08/09/23
+- Completed "Social Engineering Define" on 08/09/23
+- Completed "Create a Malicious File with MSFvenom" 08/09/23 
 
 ## Resources
 
