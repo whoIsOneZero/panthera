@@ -13,21 +13,36 @@ It serves as a reference for my learning journey and includes resources, notes, 
 6. [Disclaimer](#disclaimer)
 
 ## Course Outline
-- [x] Introduction to Social Engineering
-- [x] Psychological Principles in Social Engineering
-- [ ] Pretexting and Impersonation
-- [ ] Influence and Persuasion Techniques
-- [ ] Phishing and Vishing Attacks
-- [ ] Physical and On-Site Social Engineering
-- [ ] Ethical Considerations and Legal Aspects
+- [x] Course Introduction
+- [x] Social Engineering Defined
+- [x] Create a Malicious File with MSFvenom
+- [ ] How to create an undetectable payloaad with FatRat
+- [ ] Inject Payload in exe file using Shelter
+- [ ] Make a malicious Ms. Word document
+- [ ] Meterpreter Basics
+- [ ] Extract saved passwords with LaZagne
+- [ ] Capture VNC session
+- [ ] How to view saved Wi-Fi passwords
+- [ ] How to perform a Man-in-the-middle (MITM) attack
+- [ ] How to create a fake login page using Setoolkit
+- [ ] Blackeye phising tool
+- [ ] How to exploit Web browsers with BeFF
+- [ ] Hook web browsers with MITMf and BeEF
+- [ ] Gain full control over the target machine using BeEF
+- [ ] Hacking over the internet without port forwarding
+- [ ] How to use Setoolkit outside the local network
+- [ ] BeEF attack outside the local network
+- [ ] Phishing email attack
+- [ ] How to detect Meterpreter in your PC
+- [ ] Protect yourself from browser exploits
+- [ ] How to avoid phishing attacks
 
 ## Progress Tracking
-- Completed "Introduction to Social Engineering" on September 5, 2023.
-- Completed "Psychological Principles in Social Engineering" on September 12, 2023.
+- Completed "Course Introduction" on September 5, 2023.
+- Completed "Social Engineering Define" on September 12, 2023.
+- Completed "Create a Malicious File with MSFvenom" on 
 
 ## Resources
-- [Recommended Book: "The Art of Deception" by Kevin D. Mitnick](https://www.example.com/book-link)
-- [Online Article: "Social Engineering Techniques Explained"](https://www.example.com/article-link)
 
 ## Tools and Technologies
 
