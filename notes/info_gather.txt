@@ -1,0 +1,31 @@
+INFORMATION GATHERING METHODS
+
+- Open Source Intelligence (OSINT)
+	** Search Engines: Google, Yandex, etc.
+		Searching for target's name, email addresses, phone numbers & any online
+		profiles.
+	** Social Networks: Facebook, Twitter, LinkedIn, etc.
+		To search for personal details, interests, connections, & posts that reveal
+		info about the target's habits and preferences.
+	** Online forums and communities:
+		Forums, discussion boards and community websites where the target might have 
+		participated in some discussions or shared some info.
+	** Company websites: 
+		To gather details about the organization's structure, employees, contact info, 
+		and recent news.
+- Phishing surveys.
+	Creating fake surveys/questionnaires, disguised as legitimated ones, related to 
+	the topic of interest to the target.
+
+- Human Intelligence (HUMINT)
+	 Engaging employees/associates of the target organization, to extract information
+	 through casual convos, rapport-building or elicitation techniques.
+
+- Email spoofing and phishing.
+
+- Social Engineering Toolkit.
+
+- Public records.
+
+- 'whois' command: 
+	Gives details about a domain (name, phone num., email, etc)
