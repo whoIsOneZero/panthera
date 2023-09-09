@@ -35,3 +35,15 @@ is running
 - You now have access to the target machine.
 - To view system info, type: 
 $ sysinfo
+
+
+*** Working with the Metasploit Framework ***
+- List all available payloads: $ show payloads
+	Displays a list of payload types categorized by platform and exploit
+	module.
+
+- Look for specific payloads based on keywords: $ search windows
+	Shows those related to Windows systems.
+
+- Get more detailed information about a specific payload: $ info {the_payload}
+	Provides info, options and descriptions.
