@@ -1,5 +1,5 @@
 WHAT IS REVERSE TCP?
 - A reverse TCP connection/payload is a way to establish a connection from a target system back to the attacker's system, allowing the attacker to gain acces to the target system.
 The victim's system becomes the server and that of the attacker becomes the client.
-It's used when the attacker want's to bypass firewall rules, network security measures or 
+It's used when the attacker wants to bypass firewall rules, network security measures or 
 Network Address Translation (NAT) setups on the victim's network.
