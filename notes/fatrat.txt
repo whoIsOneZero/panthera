@@ -1,0 +1,10 @@
+CREATING AN UNDETECTABLE PAYLOAD USING FATRAT
+
+- TheFatRat doesn't come installed on Kali Linux by default so,
+you'd have to install it first.
+
+- First, you'd have to clone the repo from GitHub.
+$ git clone https://github.com/Screetsec/TheFatRat.git
+
+cd TheFatRat
+chmod +x setup.sh && ./setup.sh
